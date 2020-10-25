@@ -44,11 +44,12 @@ public class Example {
     }
 
     //Implicit Locking using synchronized keyword
-//    public synchronized int getCount(){
-//        return count++;
-//    }
+//   public synchronized int getCount(){
+//    System.out.println(Thread.currentThread().getName() + count);
+//     return count++;
+//  }
 
-    //locking using Reentrant Lock
+ //   locking using Reentrant Lock
     public int getCount() {
         lock.lock();
 
